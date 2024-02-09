@@ -1,6 +1,6 @@
 Resources:
   MyFunction:
-    Type: AWS::Serverless::Function
+    service: AWS::Serverless::Function
     Properties:
       Handler: index.handler
       Runtime: nodejs14.x
