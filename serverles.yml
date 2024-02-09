@@ -1,0 +1,13 @@
+Resources:
+  MyFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs14.x
+      CodeUri: ./src
+      Events:
+        MyApi:
+          Type: Api
+          Properties:
+            Path: /my-resource
+            Method: get
